@@ -1,0 +1,311 @@
+.bg-gray {
+  background-color: gray;
+  border: 1px solid black;
+}
+#top-menu {
+  height: 50px;
+}
+#menu {
+  height: 99px;
+}
+.box-carousel {
+  height: 503px;
+}
+#breadcrumb-top {
+  height: 30px;
+}
+
+body {
+  margin: 0;
+  width: 1280px;
+  font-family: "Droid Sans","ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Roboto, Verdana, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-weight: normal;
+}
+
+/*商品・サービス*/
+
+.h1Tit {
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.description-child h2 {
+  font-size: 1.84em;
+  font-weight: 200;
+  margin: 0 0 25px 0;
+}
+
+.description-child p {
+  margin: 0;
+  width: 300px;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.article01 {
+  height: 480px;
+  padding: 0 30px 0 30px;
+}
+
+.description {
+  height: 480px;
+  width: 500px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 auto;
+}
+
+.article01 img {
+  width: 714.5px;
+  height: 100%;
+}
+
+.description-child {
+  width: 300px;
+  margin: auto;
+  margin-top: 25%;
+}
+
+.fontSS {
+  font-size: 0.9em;
+}
+
+.btn-wrap a {
+  background: #006 url(/images/icon_arrow-right_03.png) no-repeat 10px 50%;
+  color: #ffffff;
+  width: 240px;
+  height: 23px;
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  text-decoration: none;
+  padding: 16px 23px 14px 37px;
+  border-radius: 2px;
+}
+
+.btn-wrap a:hover {
+  color: #006;
+  background-color: #aeb8de;
+  background-image: url(/images/icon_arrow-right_02.png);
+  background-repeat: no-repeat;
+  background-position: 10px 50%;
+}
+
+.lyt-retail-box-btn {
+  margin: 42px 30px;
+}
+
+.btnRound a{
+  text-decoration: none;
+  display: block;
+  height: 23px;
+  width: 208px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 16px 23px 14px 37px;
+  background: #006 url(/images/icon_arrow-right_03.png) no-repeat 10px 50%;
+  color: #ffffff;
+  border-radius: 2px;
+}
+
+.btnRound a:hover {
+  color: #006;
+  background: #aeb8de url(/images/icon_arrow-right_02.png) no-repeat 10px 50%;
+}
+
+/*headder top はじまり*/
+
+#top-menu nav ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+}
+
+#top-menu nav {
+  display: flex;
+  width: 1220px;
+  padding: 0 30px 0 30px;
+}
+
+#top-menu {
+  background-color: #006;
+  font-size: 14px;
+}
+
+#top-menu a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding-top: 9px;
+  height: 41px;
+}
+
+#top-menu  a::before {
+  background-image: url(/images/icon_arrow-right_03.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  width: 17px;
+  height: 12px;
+  content: '';
+  vertical-align: middle;
+}
+
+#top-menu .PC-customers a:hover {
+  background-color: white;
+  color: #006;
+}
+
+#top-menu nav ul li {
+  text-align: center;
+  background-color: #006;
+  line-height: 32px;
+
+}
+
+.PC-until li {
+  padding: 0 20px;
+  display: flex;
+  margin: 0;
+}
+
+.PC-until {
+  padding: 0;
+}
+
+.PC-customers a {
+  width: 160px;
+}
+
+.PC-customers {
+  height: 50px;
+  padding: 0;
+}
+
+#top-menu nav ul li.is-current a{
+  color: #006;
+  background-color: #ffffff;
+}
+
+#top-menu nav ul li.is-current a::before {
+  background-image: url(/images/icon_arrow-right_02.png);
+}
+
+/*headder top 終わり*/
+
+.headerPC-menu {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0 30px 0 0;
+}
+.headerPC-menu li {
+  width: 133px;
+  text-align: center;
+  display: table-cell;
+  vertical-align: bottom;
+  height: 84px;
+  font-size: 14px;
+  padding-top: 16px;
+}
+#menu {
+  display: flex;
+  justify-content: space-between;
+  color: #006;
+  border-bottom: 1px solid #c7c2d5;
+}
+.headerPC-menu li img {
+  height: 22.5%;
+  width: auto;
+  display: block;
+  margin: 8px auto;
+}
+.header-logo img {
+  height: 32px;
+  width: 237px;
+  padding: 37px 57px 31px 26px;
+  display: block;
+  margin-left: 30px;
+}
+
+/*breadcrumb-top*/
+
+#breadcrumb-top ul {
+  list-style: none;
+  display: flex;
+  font-size: 14px;
+  padding-left: 30px;
+  margin: 20px 0 10px 0;
+}
+
+#breadcrumb-top a {
+  color: #1d50a2;
+}
+
+/*box-carousel*/
+.box-carousel img{
+  display: inline-block;
+  margin-left: 30px;
+}
+
+/*info*/
+.info ul {
+  list-style: none;
+  padding: 0;
+  font-size: 14px;
+  height: 231px;
+  background-color: #faebe8;
+  margin: 0;
+}
+
+.info li {
+  border-bottom: 1px solid #c7c2d5;
+  padding: 21px 30px;
+}
+
+.info p {
+  margin: 0;
+  display: inline-block;
+  color: #ca3a1c;
+  vertical-align: middle;
+}
+
+.info .important .important-text {
+  width: 172px;
+  background: #ca3a1c url(/images/icon_important_info_01.png) no-repeat 15px 50%;
+  color: #ffffff;
+  text-align: center;
+  margin-right: 28px;
+  padding: 5px 0;
+  border-radius: 6px;
+}
+
+.textInner-03 {
+  word-break: break-all;
+  width: 1008px;
+}
+
+.summary {
+  text-decoration: underline #ca3a1c;
+}
+
+.lyt-retail-top-01 {
+  height: 234px;
+  width: 303px;
+  border: 1px #006 solid;
+  position: relative;
+}
+
+.flex {
+  display: flex;
+}
+
+.lyt-retail-top-01 a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
