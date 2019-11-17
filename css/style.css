@@ -246,7 +246,7 @@ h1,h2,h3,h4,h5,h6 {
 
 /*box-carousel*/
 .box-carousel img{
-  display: inline-block;
+  display: block;
   margin-left: 30px;
 }
 
@@ -291,11 +291,14 @@ h1,h2,h3,h4,h5,h6 {
   text-decoration: underline #ca3a1c;
 }
 
+/*navリンク*/
+
 .lyt-retail-top-01 {
   height: 234px;
   width: 303px;
-  border: 1px #006 solid;
+  border-left: 1px #cfcabf solid;
   position: relative;
+  padding: 0 12px;
 }
 
 .flex {
@@ -308,4 +311,80 @@ h1,h2,h3,h4,h5,h6 {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+.lyt-retail-top-01 img {
+  display: block;
+}
+
+.lyt-retail-top-01 .lyt-retail-top-01-img01,.lyt-retail-top-01-img03{
+  margin: 20px auto 0 auto;
+}
+
+.lyt-retail-top-01 .lyt-retail-top-01-img02 {
+  margin: 27px auto 0 auto;
+}
+
+.lyt-retail-top-01 .lyt-retail-top-01-img04 {
+  margin: 8px auto 0 auto;
+}
+
+.lyt-retail-top-01 .lyt-retail-top-01-text {
+  text-align: center;
+  font-weight: 700;
+  color: #000166;
+  text-decoration: underline;
+}
+
+.text-margin01 {
+  margin: 18px 0 0 0;
+}
+
+.text-margin02 {
+  margin: 28px 0 0 0;
+}
+
+.text-margin03 {
+  margin: 25px 0 0 0;
+}
+
+.lyt-retail-top-01 .btn-lyt-retail-top-text {
+  text-align: center;
+  background: #006 url(/images/icon_arrow-right_03.png) no-repeat 10px 50%;
+  color: #ffffff;
+  border-radius: 2px;
+  font-size: 0.96em;
+}
+
+.padding-bank {
+  padding: 16px 23px 14px 23px;
+}
+
+.padding-other {
+  padding: 27.5px 23px 25.5px 23px;
+}
+
+.btn-margin01 {
+  margin: 18px 0 0 0;
+}
+
+.btn-margin02 {
+  margin: 33px 0 0 0;
+}
+
+.btn-margin03 {
+  margin: 31px 0 0 0;
+}
+
+.btn-margin04 {
+  margin: 32px 0 0 0;
+}
+
+.nav-services {
+  padding: 0 30px;
+  margin-top: 40px;
+}
+
+.border-right {
+  border-right: 1px #cfcabf solid;
 }
