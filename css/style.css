@@ -299,7 +299,7 @@ h1,h2,h3,h4,h5,h6 {
   width: 303px;
   border-left: 1px #cfcabf solid;
   position: relative;
-  padding: 0 12px;
+  padding: 6px 12px 0 12px;
 }
 
 .flex {
@@ -355,6 +355,7 @@ h1,h2,h3,h4,h5,h6 {
   color: #ffffff;
   border-radius: 2px;
   font-size: 0.96em;
+  padding: 10px;
 }
 
 .padding-bank {
@@ -384,6 +385,19 @@ h1,h2,h3,h4,h5,h6 {
 .nav-services {
   padding: 0 30px;
   margin-top: 40px;
+}
+
+.nav-services a {
+  text-decoration: none;
+}
+
+.nav-services a:hover .btn-lyt-retail-top-text {
+  background-color: #aeb8de;
+  color: #006;
+}
+
+.nav-services a:hover .lyt-retail-top-01-text {
+  text-decoration: none;
 }
 
 .border-right {
