@@ -425,7 +425,6 @@ h1,h2,h3,h4,h5,h6 {
   color: #000166;
   height: 24px;
   text-align: right;
-  text-decoration: underline;
   background: url(/images/icon_arrow-right_01.png) no-repeat 8px 50%;
   background-size: 6px ;
 }
@@ -446,7 +445,7 @@ h1,h2,h3,h4,h5,h6 {
   padding-left: 40px;
 }
 /*????????*/
-.nav-services2  a:hover .lyt-retail-top-02 p {
+.nav-services2 a:hover {
   text-decoration: none;
 }
 
@@ -454,7 +453,7 @@ h1,h2,h3,h4,h5,h6 {
 
 .section-box {
   width: 1220px;
-  margin: 40px 0;
+  margin: 80px 0 40px 0;
   padding: 0 30px;
 }
 
