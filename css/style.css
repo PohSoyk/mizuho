@@ -476,3 +476,136 @@ h1,h2,h3,h4,h5,h6 {
 .section-box .listNav a:hover {
   text-decoration: none;
 }
+
+/*floating-menu*/
+.floating-menu {
+  margin: 0;
+  padding: 0;
+}
+
+.floating-menu-wrapper li {
+  list-style: none;
+}
+
+.floating-menu-wrapper a {
+  text-decoration: none;
+  font-size: 14px;
+  color: #ffffff;
+  display: inline-block;
+  padding-right: 18px;
+}
+
+.floating-menu-wrapper {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  height: 100px;
+}
+
+.floating-menu-chat a {
+  background-color: #006;
+}
+
+.floating-menu-help a{
+  background-color: #0068b7;
+}
+
+.floating-menu span {
+  padding-left: 18px;
+  background: url(/images/icon_arrow-right_03.png) no-repeat 0 50%;
+}
+
+.floating-menu-chat a:before {
+  background: url(/images/icon_balloon_01.png) no-repeat 50% 50%;
+}
+
+.floating-menu-help a:before {
+  background: url(/images/icon_question_01.png) no-repeat 50% 50%;
+}
+
+.floating-menu a:before {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  content: '';
+  vertical-align: middle;
+}
+.floating-menu-chat {
+  max-width: 50px;
+  white-space: nowrap;
+  transition: max-width .36s ease .12s;
+}
+
+.floating-menu-help {
+  max-width: 50px;
+  white-space: nowrap;
+  transition: max-width .36s ease .12s;
+}
+
+.floating-menu-chat:hover {
+  max-width: 400px;
+}
+
+.floating-menu-chat a:hover {
+  color: #006; 
+  background-color: #aeb8de;
+}
+
+/*tabs*/
+/*タブ切り替え全体のスタイル*/
+.tabs {
+  padding-bottom: 40px;
+  background-color: #fff;
+  width: 1220px;
+  margin: 0 auto;
+}
+
+/*タブのスタイル*/
+.tab_item {
+  width: calc(100%/3);
+  box-sizing: border-box;
+  border-left: 1px solid #626262;
+  height: 50px;
+  background-color: #8d8d8d;
+  line-height: 50px;
+  font-size: 15.4px;
+  color: #ffffff;
+  display: block;
+  float: left;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+.tab_item:hover {
+  opacity: 0.75;
+}
+
+/*ラジオボタンを全て消す*/
+input[name="tab_item"] {
+  display: none;
+}
+
+/*タブ切り替えの中身のスタイル*/
+.tab_content {
+  display: none;
+  padding: 40px 40px 0;
+  clear: both;
+  overflow: hidden;
+}
+
+
+/*選択されているタブのコンテンツのみを表示*/
+#all:checked ~ #all_content,
+#goods-service:checked ~ #goods-service_content,
+#notice:checked ~ #notice_content {
+  display: block;
+}
+
+/*選択されているタブのスタイルを変える*/
+.tabs input:checked + .tab_item {
+  background-color: #1d50a2;
+  color: #fff;
+}
+
+.tabs label.tab_item:nth-of-type(1) {
+  border-left: 0;
+}

@@ -10,6 +10,20 @@
 <body>
   <!--headderはじまり-->
   <header>
+    <div class="floating-menu-wrapper">
+      <ul class="floating-menu">
+        <li class="floating-menu-item floating-menu-chat">
+          <a href="#">
+            <span>チャットで質問</span>
+          </a>
+        </li>
+        <li class="floating-menu-item floating-menu-help">
+          <a href="#">
+            <span>ヘルプ・お問い合わせ</span>
+          </a>
+        </li>
+      </ul>
+    </div>
     <div id="top-menu">
       <nav>
         <ul class="PC-customers">
@@ -144,12 +158,14 @@
           </div>
         </div>
       </a>
-    </div>  
+    </div>
     <div class="flex nav-services2">
       <a href="#">
         <div class="lyt-retail-top-02 flex padding-right">
-          <img  class="lyt-retail-top-02-img01" src="/images/icon_app_01.png" alt="">
-          <p class="p-width01"><みずほ>のアプリ</p>
+          <img class="lyt-retail-top-02-img01" src="/images/icon_app_01.png" alt="">
+          <p class="p-width01">
+            <みずほ>のアプリ
+          </p>
         </div>
       </a>
       <a href="#">
@@ -296,8 +312,226 @@
       </li>
     </ul>
   </div>
-  <div class="lyt-retail-top">
-
+  <div class="tabs">
+    <input id="all" type="radio" name="tab_item" checked>
+    <label class="tab_item" for="all">キャンペーン・プラン情報</label>
+    <input id="goods-service" type="radio" name="tab_item">
+    <label class="tab_item" for="goods-service">商品・サービスのご案内</label>
+    <input id="notice" type="radio" name="tab_item">
+    <label class="tab_item" for="notice">お知らせ</label>
+    <div class="tab_content" id="all_content">
+      <div class="tab_content_description">
+        <dl class="c-txtsp">
+          <dt>
+            <p>2019年11月29日</p>
+          </dt>
+          <dd>
+            <p class="cpnTit">
+              <a href="#">［オンライン金融商品仲介］みずほ証券個人向け国債のキャンペーン実施中！</a>
+            </p>
+            <p class="cpnPeriod"></p>
+          </dd>
+          <dt>
+            <p>2019年11月29日</p>
+          </dt>
+          <dd>
+            <p class="cpnTit">
+              <a href="#">みずほ銀行Twitter公式アカウント #みずほ銀行のクリスマスキャンペーン</a>
+            </p>
+            <p class="cpnPeriod"></p>
+          </dd>
+          <dt>
+            <p>2019年11月18日</p>
+          </dt>
+          <dd>
+            <p class="cpnTit">
+              <a href="#">ペイジーによるお支払いで1万円が300名様に当たる！キャンペーン</a>
+            </p>
+            <p class="cpnPeriod"></p>
+          </dd>
+          <dt>
+            <p>2019年11月1日</p>
+          </dt>
+          <dd>
+            <p class="cpnTit">
+              <a href="#">［期間限定 金利引き上げ］<外貨定期預金おトクな金利プラン>実施中！</a>
+            </p>
+            <p class="cpnPeriod">期間：2019年11月1日 金曜日～2019年12月30日 月曜日</p>
+          </dd>
+          <dt>
+            <p>2019年11月1日</p>
+          </dt>
+          <dd>
+            <p class="cpnTit">
+              <a href="#">J–Debitをご利用で現金10万円または人気の賞品が当たるチャンス！ 「J–Debit使ってトクトクキャンペーン’19冬」実施中！ （日本電子決済推進機構主催）</a>
+            </p>
+            <p class="cpnPeriod">キャンペーン期間：2019年11月1日 金曜日～2019年12月31日 火曜日</p>
+          </dd>
+          <dt>
+            <p>2019年10月22日</p>
+          </dt>
+          <dd>
+            <p class="cpnTit">
+              <a href="#">宝くじラッキーライン「年末ジャンボ」キャンペーン！</a>
+            </p>
+            <p class="cpnPeriod">キャンペーン期間：2019年10月22日 火曜日～2019年12月21日 土曜日</p>
+          </dd>
+          <dt>
+            <p>2019年10月21日</p>
+          </dt>
+          <dd>
+            <p class="cpnTit">みずほWallet関連 おトクでうれしいキャンペーン続々実施中！</p>
+            <p class="cpnPeriod"></p>
+          </dd>
+          <dt>
+            <p>2019年10月1日</p>
+          </dt>
+          <dd>
+            <p class="cpnTit">
+              <a href="#">使うほどドンドンお得！最大10万円キャッシュバックキャンペーン実施中！</a>
+            </p>
+            <p class="cpnPeriod">キャンペーン期間：2019年10月1日 火曜日 ～ 2019年12月31日 火曜日</p>
+          </dd>
+          <dt>
+            <p>2019年8月29日</p>
+          </dt>
+          <dd>
+            <p class="cpnTit">
+              <a href="#">
+                <みずほWallet>ご利用に感謝して。キャッシュバック実施中！
+              </a>
+            </p>
+            <p class="cpnPeriod"></p>
+          </dd>
+        </dl>
+      </div>
+    </div>
+    <div class="tab_content" id="goods-service_content">
+      <div class="tab_content_description">
+        <dl class="c-txtsp">
+          <dt>2019年11月5日</dt>
+          <dd>
+            投資信託新商品の取扱を開始しました。<br>「One国際分散投資戦略ファンド
+            <br>
+            <span>
+              <a href="#">（目標リスク4％）（愛称：THE GRiPS 4％）</a>
+            </span>
+            /
+            <br>
+            <span>
+              <a href="#">（目標リスク6％）（愛称：THE GRiPS 6％）</a>
+            </span>
+            /
+            <br>
+            <span>
+              <a href="#">（目標リスク8％）（愛称：THE GRiPS 8％）</a>
+            </span>
+            」
+          </dd>
+          <dt>2019年11月5日</dt>
+          <dd>
+            <a href="#">〔投資信託〕2019年度 定期システムメンテナンスに伴う、一部サービス停止のお知らせ</a>
+          </dd>
+          <dt>2019年10月28日</dt>
+          <dd>
+            <a href="#">みずほダイレクト［インターネットバンキング］投資信託メニューがリニューアルしました。</a>
+          </dd>
+          <dt>2019年10月8日</dt>
+          <dd>
+            <a href="#">2020年3月1日（2020年1月31日のお取引条件判定）より、みずほマイレージクラブのサービス内容を変更させていただきます。</a>
+          </dd>
+          <dt>2019年9月30日</dt>
+          <dd>
+            <a href="#">［みずほ銀行キャッシュレスサービス］みずほ銀行のキャッシュレスサービスを早分かり！</a>
+          </dd>
+          <dt>2019年8月29日</dt>
+          <dd>
+            <a href="#">［みずほWallet for iOS］口座直結でお支払いできるスマホデビットサービス開始！ 本サービスにともないみずほWallet for Android、for
+              iOSの規定の一部を変更いたしました。</a>
+          </dd>
+          <dt>2019年6月7日</dt>
+          <dd>
+            投資信託新商品の取扱を開始しました。<br>「グローバル・ハイクオリティ成長株式ファンド（愛称：未来の世界）
+            <br>
+            <span><a href="#">（限定為替ヘッジ）</a></span>
+            /
+            <span><a href="#">（為替ヘッジなし）</a></span>
+            <br>
+            グローバル・ハイクオリティ成長株式ファンド（年2回決算型）（愛称：未来の世界（年2回決算型））
+            <br>
+            <span><a href="#">（限定為替ヘッジ）</a></span>
+            /
+            <span><a href="#">（為替ヘッジなし）</a></span>
+          </dd>
+          <dt>2019年5月29日</dt>
+          <dd>
+            投資信託新商品の取扱を開始しました。
+            <br>
+            「<span><a href="#">One NYダウ・インデックス・ファンド</a></span>」
+          </dd>
+          <dt>2019年2月14日</dt>
+          <dd>
+            <a href="#">モーニングスターアワード"ファンド オブ ザ イヤー 2018"みずほ銀行取扱の3ファンドが受賞！</a>
+          </dd>
+          <dt>2018年4月2日</dt>
+          <dd>
+            <a href="#">2018年4月末判定より、J.Score（個人向けレンディングサービスを提供）のスコア取得等がみずほマイレージクラブ「うれしい特典」のお取引条件に加わりました！</a>
+          </dd>
+        </dl>
+      </div>
+    </div>
+    <div class="tab_content" id="notice_content">
+      <div class="tab_content_description">
+        <dl class="c-txtsp">
+          <dt>2019年11月20日</dt>
+          <dd>
+            <a href="#">2019年度 年末年始の営業のご案内</a>
+          </dd>
+          <dt>2019年11月19日</dt>
+          <dd>
+            <span>
+              <a href="#">管理会社による公告の掲載について（アルゼンチン共和国円建て債券）（お知らせ）（PDF/403KB）</a>
+            </span>
+          </dd>
+          <dt>2019年11月12日</dt>
+          <dd>
+            <a href="#">『店舗統合・移転のお知らせ』に追加しました。</a>
+            <br>
+            移転実施日：2020年6月22日 月曜日 品川区役所出張所
+          </dd>
+          <dt>2019年11月1日</dt>
+          <dd>
+            <a href="#">みずほ銀行は「ウォームビズ」を実施しています。</a>
+          </dd>
+          <dt>2019年10月31日</dt>
+          <dd>
+            <span>
+              <a href="#">アルゼンチン共和国を控訴人とする訴訟の控訴審判決について（お知らせ）（PDF/1,776KB）</a>
+            </span>
+          </dd>
+          <dt>2019年10月30日</dt>
+          <dd>
+            <a href="#">みずほダイレクト［テレホンバンキング］オペレーターサービス廃止について</a>
+          </dd>
+          <dt>2019年10月28日</dt>
+          <dd>
+            <a href="#">令和元年台風第19号災害に対する義援金口座のご案内</a>
+          </dd>
+          <dt>2019年10月8日</dt>
+          <dd>
+            <a href="#">ATM・みずほダイレクト［テレホンバンキング］の振込手数料の一部改定について</a>
+          </dd>
+          <dt>2019年10月8日</dt>
+          <dd>
+            <a href="#">外貨両替の店舗受付停止について</a>
+          </dd>
+          <dt>2019年10月8日</dt>
+          <dd>
+            <a href="#">郵送による各種ご案内の終了について（個人のお客さま）</a>
+          </dd>
+        </dl>
+      </div>
+    </div>
   </div>
   <p class="alnCenter"></p>
   <div class="content bg-gray">
