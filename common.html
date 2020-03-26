@@ -8,6 +8,7 @@
 </head>
 
 <body>
+
   <!--headderはじまり-->
   <header>
     <div class="floating-menu-wrapper">
@@ -80,471 +81,532 @@
       </ul>
     </div>
   </header>
-  <div id="breadcrumb-top">
-    <ul>
-      <li>
-        <a href="common.html">ホーム</a>
-        <span>></span>
-      </li>
-      <li>個人のお客さま</li>
-    </ul>
-  </div>
-  <div class="box-carousel">
-    <img src="images\img_mainvisual_03_pc.jpg" alt="">
-  </div>
-  <nav class="info">
-    <ul class="important">
-      <li class="important-01">
-        <p class="important-text">
-          重要なお知らせ
-        </p>
-        <p class="textInner-01 summary">
-          みずほ銀行を装ったフィッシングメールやSMS等での誘導によるフィッシングサイトにご注意ください。（2019年9月3日）
-        </p>
-      </li>
-      <li class="important-02">
-        <p class="important-text">
-          重要なお知らせ
-        </p>
-        <p class="textInner-02 summary">
-          みずほ銀行を騙った不審電話にご注意ください。
-        </p>
-      </li>
-      <li class="important-03">
-        <p class="important-text">
-          重要なお知らせ
-        </p>
-        <p class="textInner-03 summary">
-          【必ずご確認ください】個人向けインターネットバンキング（みずほダイレクト）を悪用した不正送金が発生しております。不正送金への防止対策を必ずご確認ください。
-        </p>
-      </li>
-    </ul>
-  </nav>
-  <div>
-    <div class="flex nav-services">
-      <a href="#">
-        <div class="lyt-retail-top-01">
-          <img class="lyt-retail-top-01-img01" src="images\icon_direct_01_pc.gif" alt="">
-          <p class="lyt-retail-top-01-text">インターネットバンキング<br>みずほダイレクト</p>
-          <div class="btn-lyt-retail-top">
-            <p class="btn-lyt-retail-top-text padding-bank btn-margin01">インターネットバンキング<br>みずほダイレクトログイン</p>
-          </div>
-        </div>
-      </a>
-      <a href="#">
-        <div class="lyt-retail-top-01">
-          <img class="lyt-retail-top-01-img02" src="images\icon_balance_statement_01_pc.gif" alt="">
-          <p class="lyt-retail-top-01-text text-margin02">かんたん残高照会</p>
-          <div class="btn-lyt-retail-top">
-            <p class="btn-lyt-retail-top-text padding-other btn-margin02">かんたん残高照会ログイン</p>
-          </div>
-        </div>
-      </a>
-      <a href="#">
-        <div class="lyt-retail-top-01">
-          <img class="lyt-retail-top-01-img03" src="images\icon_online_booking_01_pc.gif" alt="">
-          <p class="lyt-retail-top-01-text text-margin02">ご相談予約・セミナー予約</p>
-          <div class="btn-lyt-retail-top">
-            <p class="btn-lyt-retail-top-text padding-other btn-margin03">ご相談・セミナーを予約する</p>
-          </div>
-        </div>
-      </a>
-      <a href="#">
-        <div class="lyt-retail-top-01 border-right">
-          <img class="lyt-retail-top-01-img04" src="images\icon_lottery_01_pc.gif" alt="">
-          <p class="lyt-retail-top-01-text text-margin03">宝くじサイト　当選番号案内</p>
-          <div class="btn-lyt-retail-top">
-            <p class="btn-lyt-retail-top-text padding-other btn-margin04">宝くじサイトへ</p>
-          </div>
-        </div>
-      </a>
+  <div class="wraper">
+    <div id="breadcrumb-top">
+      <ul>
+        <li>
+          <a href="common.html">ホーム</a>
+          <span>></span>
+        </li>
+        <li>個人のお客さま</li>
+      </ul>
     </div>
-    <div class="flex nav-services2">
-      <a href="#">
-        <div class="lyt-retail-top-02 flex padding-right">
-          <img class="lyt-retail-top-02-img01" src="/images/icon_app_01.png" alt="">
-          <p class="p-width01">
-            <みずほ>のアプリ
+    <div class="box-carousel">
+      <div class="slides">
+        <div class="slide">
+          <img src="/images/img_mainvisual_01_pc.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="/images/img_mainvisual_02_pc.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="/images/img_mainvisual_03_pc (1).jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="/images/img_mainvisual_05_pc.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <div id="line">
+      <span class="expand"></span>
+    </div>
+    <div class="carousel-indicator">
+      <ul class="carousel-indicator-items">
+        <li onclick="setCurrent(1)" class="carousel-indicator-item is-current"></li>
+        <li onclick="setCurrent(2)" class="carousel-indicator-item"></li>
+        <li onclick="setCurrent(3)" class="carousel-indicator-item"></li>
+        <li onclick="setCurrent(4)" class="carousel-indicator-item"></li>
+      </ul>
+    </div>
+    <div class="carousel-controller">
+      <button class="carousel-controller-button is-play" style="width: 61px;">
+        <img class="carousel-controller-stop" src="/images/icon_slide-stop_01.png" alt="停止">
+        <img class="carousel-controller-play" src="/images/icon_slide-play_01.png" alt="再生">
+      </button>
+    </div>
+    <nav class="info">
+      <ul class="important">
+        <li class="important-01">
+          <p class="important-text">
+            重要なお知らせ
           </p>
-        </div>
-      </a>
-      <a href="#">
-        <div class="lyt-retail-top-02 flex padding-left">
-          <img class="lyt-retail-top-02-img02" src="/images/icon_learn_01.png" alt="">
-          <p class="p-width02">これからのおかねのはなし</p>
-        </div>
-      </a>
-    </div>
-  </div>
-  <h1 class="h1Tit">商品・サービス</h1>
-  <div class="article01">
-    <div class="description">
-      <div class="description-child">
-        <h2>口座開設</h2>
-        <p>みずほ銀行の口座開設のお申し込み方法や、みずほ銀行での口座開設するメリットをご案内しています。</p>
-        <div class="btn-wrap">
-          <a href="#">口座開設へ</a>
-        </div>
-      </div>
-    </div>
-    <img src="images\img_index_01.jpg" alt="">
-  </div>
-  <div class="article01">
-    <img src="images\img_index_02.jpg" alt="">
-    <div class="description">
-      <div class="description-child">
-        <h2>預金</h2>
-        <p>あなたのマネープランに合わせてお選びいただける円預金商品をご用意しています。</p>
-        <div class="btn-wrap">
-          <a href="#">預金へ</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="article01">
-    <div class="description">
-      <div class="description-child">
-        <h2>外貨預金</h2>
-        <p>期間で、利率で、プランで選べる。資産運用にお役立ていただける外貨預金商品をご用意しています。</p>
-        <div class="btn-wrap">
-          <a href="#">外貨預金へ</a>
-        </div>
-      </div>
-    </div>
-    <img src="images\img_index_03.png" alt="">
-  </div>
-  <div class="article01">
-    <img src="images\img_index_04.png" alt="">
-    <div class="description">
-      <div class="description-child">
-        <h2>決済・支払いサービス</h2>
-        <p>様々なライフシーンでご活用いただける、多種多様な決済・支払いサービスを取りそろえています。</p>
-        <div class="btn-wrap">
-          <a href="#">決済・支払いサービスへ</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="article01">
-    <div class="description">
-      <div class="description-child">
-        <h2>投資信託</h2>
-        <p>お客さまの大切な資産運用にお役立ていただけるよう、様々なタイプの投資信託をご用意しています。</p>
-        <div class="btn-wrap">
-          <a href="#">投資信託へ</a>
-        </div>
-      </div>
-    </div>
-    <img src="images\img_index_05.jpg" alt="">
-  </div>
-  <div class="article01">
-    <img src="images\img_index_10.jpg" alt="">
-    <div class="description">
-      <div class="description-child">
-        <h2>NISA：ニーサ<br><span class="fontSS">（少額投資非課税制度）</span></h2>
-        <p>公募株式投資信託の普通分配金と値上がり益が非課税となる税制優遇制度です。</p>
-        <div class="btn-wrap">
-          <a href="#">NISAへ</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="article01">
-    <div class="description">
-      <div class="description-child">
-        <h2>ローン</h2>
-        <p>住宅ローンや教育ローン、カードローンなど、様々なライフシーンでご活用いただける、多種多様なローンをご用意しています。</p>
-        <div class="btn-wrap">
-          <a href="#">ローンへ</a>
-        </div>
-      </div>
-    </div>
-    <img src="images\img_index_06.jpg" alt="">
-  </div>
-  <div class="article01">
-    <img src="images\img_index_07.jpg" alt="">
-    <div class="description">
-      <div class="description-child">
-        <h2>保険</h2>
-        <p>ご自身はもちろん、ご家族のための備えも。お客さまのニーズに合わせてお選びいただける、様々な種類の保険商品をご用意しています。</p>
-        <div class="btn-wrap">
-          <a href="#">保険へ</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="article01">
-    <div class="description">
-      <div class="description-child">
-        <h2>iDeCo：イデコ<br><span class="fontSS">（個人型確定拠出年金）</span></h2>
-        <p>iDeCoは任意でお申し込むことにより、公的年金に加えて給付を受けられる私的年金の一つです。</p>
-        <div class="btn-wrap">
-          <a href="#">iDeCoへ</a>
-        </div>
-      </div>
-    </div>
-    <img src="images\img_index_08.jpg" alt="">
-  </div>
-  <div class="article01">
-    <img src="images\img_index_09.jpg" alt="">
-    <div class="description">
-      <div class="description-child">
-        <h2>相続・信託商品</h2>
-        <p>お客さまの大切な資産を次世代にスムーズにつなげます。みずほ銀行では、みずほ信託銀行の信託代理店として商品の契約締結の媒介を行っています。</p>
-        <div class="btn-wrap">
-          <a href="#">相続・信託商品へ</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="lyt-retail-box-btn">
-    <div class="btnRound">
-      <a href="#">商品・サービス一覧はこちら</a>
-    </div>
-  </div>
-  <div class="section-box">
-    <ul class="listNav">
-      <li>
-        <a href="#">商品概要説明一覧</a>
-      </li>
-      <li>
-        <a href="#">規定一覧</a>
-      </li>
-    </ul>
-  </div>
-  <div class="tabs">
-    <input id="all" type="radio" name="tab_item" checked>
-    <label class="tab_item" for="all">キャンペーン・プラン情報</label>
-    <input id="goods-service" type="radio" name="tab_item">
-    <label class="tab_item" for="goods-service">商品・サービスのご案内</label>
-    <input id="notice" type="radio" name="tab_item">
-    <label class="tab_item" for="notice">お知らせ</label>
-    <div class="tab_content" id="all_content">
-      <div class="tab_content_description">
-        <dl class="c-txtsp">
-          <dt>
-            <p>2019年11月29日</p>
-          </dt>
-          <dd>
-            <p class="cpnTit">
-              <a href="#">［オンライン金融商品仲介］みずほ証券個人向け国債のキャンペーン実施中！</a>
-            </p>
-            <p class="cpnPeriod"></p>
-          </dd>
-          <dt>
-            <p>2019年11月29日</p>
-          </dt>
-          <dd>
-            <p class="cpnTit">
-              <a href="#">みずほ銀行Twitter公式アカウント #みずほ銀行のクリスマスキャンペーン</a>
-            </p>
-            <p class="cpnPeriod"></p>
-          </dd>
-          <dt>
-            <p>2019年11月18日</p>
-          </dt>
-          <dd>
-            <p class="cpnTit">
-              <a href="#">ペイジーによるお支払いで1万円が300名様に当たる！キャンペーン</a>
-            </p>
-            <p class="cpnPeriod"></p>
-          </dd>
-          <dt>
-            <p>2019年11月1日</p>
-          </dt>
-          <dd>
-            <p class="cpnTit">
-              <a href="#">［期間限定 金利引き上げ］<外貨定期預金おトクな金利プラン>実施中！</a>
-            </p>
-            <p class="cpnPeriod">期間：2019年11月1日 金曜日～2019年12月30日 月曜日</p>
-          </dd>
-          <dt>
-            <p>2019年11月1日</p>
-          </dt>
-          <dd>
-            <p class="cpnTit">
-              <a href="#">J–Debitをご利用で現金10万円または人気の賞品が当たるチャンス！ 「J–Debit使ってトクトクキャンペーン’19冬」実施中！ （日本電子決済推進機構主催）</a>
-            </p>
-            <p class="cpnPeriod">キャンペーン期間：2019年11月1日 金曜日～2019年12月31日 火曜日</p>
-          </dd>
-          <dt>
-            <p>2019年10月22日</p>
-          </dt>
-          <dd>
-            <p class="cpnTit">
-              <a href="#">宝くじラッキーライン「年末ジャンボ」キャンペーン！</a>
-            </p>
-            <p class="cpnPeriod">キャンペーン期間：2019年10月22日 火曜日～2019年12月21日 土曜日</p>
-          </dd>
-          <dt>
-            <p>2019年10月21日</p>
-          </dt>
-          <dd>
-            <p class="cpnTit">みずほWallet関連 おトクでうれしいキャンペーン続々実施中！</p>
-            <p class="cpnPeriod"></p>
-          </dd>
-          <dt>
-            <p>2019年10月1日</p>
-          </dt>
-          <dd>
-            <p class="cpnTit">
-              <a href="#">使うほどドンドンお得！最大10万円キャッシュバックキャンペーン実施中！</a>
-            </p>
-            <p class="cpnPeriod">キャンペーン期間：2019年10月1日 火曜日 ～ 2019年12月31日 火曜日</p>
-          </dd>
-          <dt>
-            <p>2019年8月29日</p>
-          </dt>
-          <dd>
-            <p class="cpnTit">
-              <a href="#">
-                <みずほWallet>ご利用に感謝して。キャッシュバック実施中！
-              </a>
-            </p>
-            <p class="cpnPeriod"></p>
-          </dd>
-        </dl>
-      </div>
-    </div>
-    <div class="tab_content" id="goods-service_content">
-      <div class="tab_content_description">
-        <dl class="c-txtsp">
-          <dt>2019年11月5日</dt>
-          <dd>
-            投資信託新商品の取扱を開始しました。<br>「One国際分散投資戦略ファンド
-            <br>
-            <span>
-              <a href="#">（目標リスク4％）（愛称：THE GRiPS 4％）</a>
-            </span>
-            /
-            <br>
-            <span>
-              <a href="#">（目標リスク6％）（愛称：THE GRiPS 6％）</a>
-            </span>
-            /
-            <br>
-            <span>
-              <a href="#">（目標リスク8％）（愛称：THE GRiPS 8％）</a>
-            </span>
-            」
-          </dd>
-          <dt>2019年11月5日</dt>
-          <dd>
-            <a href="#">〔投資信託〕2019年度 定期システムメンテナンスに伴う、一部サービス停止のお知らせ</a>
-          </dd>
-          <dt>2019年10月28日</dt>
-          <dd>
-            <a href="#">みずほダイレクト［インターネットバンキング］投資信託メニューがリニューアルしました。</a>
-          </dd>
-          <dt>2019年10月8日</dt>
-          <dd>
-            <a href="#">2020年3月1日（2020年1月31日のお取引条件判定）より、みずほマイレージクラブのサービス内容を変更させていただきます。</a>
-          </dd>
-          <dt>2019年9月30日</dt>
-          <dd>
-            <a href="#">［みずほ銀行キャッシュレスサービス］みずほ銀行のキャッシュレスサービスを早分かり！</a>
-          </dd>
-          <dt>2019年8月29日</dt>
-          <dd>
-            <a href="#">［みずほWallet for iOS］口座直結でお支払いできるスマホデビットサービス開始！ 本サービスにともないみずほWallet for Android、for
-              iOSの規定の一部を変更いたしました。</a>
-          </dd>
-          <dt>2019年6月7日</dt>
-          <dd>
-            投資信託新商品の取扱を開始しました。<br>「グローバル・ハイクオリティ成長株式ファンド（愛称：未来の世界）
-            <br>
-            <span><a href="#">（限定為替ヘッジ）</a></span>
-            /
-            <span><a href="#">（為替ヘッジなし）</a></span>
-            <br>
-            グローバル・ハイクオリティ成長株式ファンド（年2回決算型）（愛称：未来の世界（年2回決算型））
-            <br>
-            <span><a href="#">（限定為替ヘッジ）</a></span>
-            /
-            <span><a href="#">（為替ヘッジなし）</a></span>
-          </dd>
-          <dt>2019年5月29日</dt>
-          <dd>
-            投資信託新商品の取扱を開始しました。
-            <br>
-            「<span><a href="#">One NYダウ・インデックス・ファンド</a></span>」
-          </dd>
-          <dt>2019年2月14日</dt>
-          <dd>
-            <a href="#">モーニングスターアワード"ファンド オブ ザ イヤー 2018"みずほ銀行取扱の3ファンドが受賞！</a>
-          </dd>
-          <dt>2018年4月2日</dt>
-          <dd>
-            <a href="#">2018年4月末判定より、J.Score（個人向けレンディングサービスを提供）のスコア取得等がみずほマイレージクラブ「うれしい特典」のお取引条件に加わりました！</a>
-          </dd>
-        </dl>
-      </div>
-    </div>
-    <div class="tab_content" id="notice_content">
-      <div class="tab_content_description">
-        <dl class="c-txtsp">
-          <dt>2019年11月20日</dt>
-          <dd>
-            <a href="#">2019年度 年末年始の営業のご案内</a>
-          </dd>
-          <dt>2019年11月19日</dt>
-          <dd>
-            <span>
-              <a href="#">管理会社による公告の掲載について（アルゼンチン共和国円建て債券）（お知らせ）（PDF/403KB）</a>
-            </span>
-          </dd>
-          <dt>2019年11月12日</dt>
-          <dd>
-            <a href="#">『店舗統合・移転のお知らせ』に追加しました。</a>
-            <br>
-            移転実施日：2020年6月22日 月曜日 品川区役所出張所
-          </dd>
-          <dt>2019年11月1日</dt>
-          <dd>
-            <a href="#">みずほ銀行は「ウォームビズ」を実施しています。</a>
-          </dd>
-          <dt>2019年10月31日</dt>
-          <dd>
-            <span>
-              <a href="#">アルゼンチン共和国を控訴人とする訴訟の控訴審判決について（お知らせ）（PDF/1,776KB）</a>
-            </span>
-          </dd>
-          <dt>2019年10月30日</dt>
-          <dd>
-            <a href="#">みずほダイレクト［テレホンバンキング］オペレーターサービス廃止について</a>
-          </dd>
-          <dt>2019年10月28日</dt>
-          <dd>
-            <a href="#">令和元年台風第19号災害に対する義援金口座のご案内</a>
-          </dd>
-          <dt>2019年10月8日</dt>
-          <dd>
-            <a href="#">ATM・みずほダイレクト［テレホンバンキング］の振込手数料の一部改定について</a>
-          </dd>
-          <dt>2019年10月8日</dt>
-          <dd>
-            <a href="#">外貨両替の店舗受付停止について</a>
-          </dd>
-          <dt>2019年10月8日</dt>
-          <dd>
-            <a href="#">郵送による各種ご案内の終了について（個人のお客さま）</a>
-          </dd>
-        </dl>
-      </div>
-    </div>
-  </div>
-  <p class="alnCenter"></p>
-  <div class="content bg-gray">
-
-  </div>
-  <div class="download bg-gray">
-
-  </div>
-  <footer>
+          <p class="textInner-01 summary">
+            みずほ銀行を装ったフィッシングメールやSMS等での誘導によるフィッシングサイトにご注意ください。（2019年9月3日）
+          </p>
+        </li>
+        <li class="important-02">
+          <p class="important-text">
+            重要なお知らせ
+          </p>
+          <p class="textInner-02 summary">
+            みずほ銀行を騙った不審電話にご注意ください。
+          </p>
+        </li>
+        <li class="important-03">
+          <p class="important-text">
+            重要なお知らせ
+          </p>
+          <p class="textInner-03 summary">
+            【必ずご確認ください】個人向けインターネットバンキング（みずほダイレクト）を悪用した不正送金が発生しております。不正送金への防止対策を必ずご確認ください。
+          </p>
+        </li>
+      </ul>
+    </nav>
     <div>
+      <div class="flex nav-services">
+        <a href="#">
+          <div class="lyt-retail-top-01">
+            <img class="lyt-retail-top-01-img01" src="images\icon_direct_01_pc.gif" alt="">
+            <p class="lyt-retail-top-01-text">インターネットバンキング<br>みずほダイレクト</p>
+            <div class="btn-lyt-retail-top">
+              <p class="btn-lyt-retail-top-text padding-bank btn-margin01">インターネットバンキング<br>みずほダイレクトログイン</p>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="lyt-retail-top-01">
+            <img class="lyt-retail-top-01-img02" src="images\icon_balance_statement_01_pc.gif" alt="">
+            <p class="lyt-retail-top-01-text text-margin02">かんたん残高照会</p>
+            <div class="btn-lyt-retail-top">
+              <p class="btn-lyt-retail-top-text padding-other btn-margin02">かんたん残高照会ログイン</p>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="lyt-retail-top-01">
+            <img class="lyt-retail-top-01-img03" src="images\icon_online_booking_01_pc.gif" alt="">
+            <p class="lyt-retail-top-01-text text-margin02">ご相談予約・セミナー予約</p>
+            <div class="btn-lyt-retail-top">
+              <p class="btn-lyt-retail-top-text padding-other btn-margin03">ご相談・セミナーを予約する</p>
+            </div>
+          </div>
+        </a>
+        <a href="#">
+          <div class="lyt-retail-top-01 border-right">
+            <img class="lyt-retail-top-01-img04" src="images\icon_lottery_01_pc.gif" alt="">
+            <p class="lyt-retail-top-01-text text-margin03">宝くじサイト　当選番号案内</p>
+            <div class="btn-lyt-retail-top">
+              <p class="btn-lyt-retail-top-text padding-other btn-margin04">宝くじサイトへ</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="flex nav-services2">
+        <a href="#">
+          <div class="lyt-retail-top-02 flex padding-right">
+            <img class="lyt-retail-top-02-img01" src="/images/icon_app_01.png" alt="">
+            <p class="p-width01">
+              <みずほ>のアプリ
+            </p>
+          </div>
+        </a>
+        <a href="#">
+          <div class="lyt-retail-top-02 flex padding-left">
+            <img class="lyt-retail-top-02-img02" src="/images/icon_learn_01.png" alt="">
+            <p class="p-width02">これからのおかねのはなし</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <h1 class="h1Tit">商品・サービス</h1>
+    <div class="article01">
+      <div class="description">
+        <div class="description-child">
+          <h2>口座開設</h2>
+          <p>みずほ銀行の口座開設のお申し込み方法や、みずほ銀行での口座開設するメリットをご案内しています。</p>
+          <div class="btn-wrap">
+            <a href="#">口座開設へ</a>
+          </div>
+        </div>
+      </div>
+      <img src="images\img_index_01.jpg" alt="">
+    </div>
+    <div class="article01">
+      <img src="images\img_index_02.jpg" alt="">
+      <div class="description">
+        <div class="description-child">
+          <h2>預金</h2>
+          <p>あなたのマネープランに合わせてお選びいただける円預金商品をご用意しています。</p>
+          <div class="btn-wrap">
+            <a href="#">預金へ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="article01">
+      <div class="description">
+        <div class="description-child">
+          <h2>外貨預金</h2>
+          <p>期間で、利率で、プランで選べる。資産運用にお役立ていただける外貨預金商品をご用意しています。</p>
+          <div class="btn-wrap">
+            <a href="#">外貨預金へ</a>
+          </div>
+        </div>
+      </div>
+      <img src="images\img_index_03.png" alt="">
+    </div>
+    <div class="article01">
+      <img src="images\img_index_04.png" alt="">
+      <div class="description">
+        <div class="description-child">
+          <h2>決済・支払いサービス</h2>
+          <p>様々なライフシーンでご活用いただける、多種多様な決済・支払いサービスを取りそろえています。</p>
+          <div class="btn-wrap">
+            <a href="#">決済・支払いサービスへ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="article01">
+      <div class="description">
+        <div class="description-child">
+          <h2>投資信託</h2>
+          <p>お客さまの大切な資産運用にお役立ていただけるよう、様々なタイプの投資信託をご用意しています。</p>
+          <div class="btn-wrap">
+            <a href="#">投資信託へ</a>
+          </div>
+        </div>
+      </div>
+      <img src="images\img_index_05.jpg" alt="">
+    </div>
+    <div class="article01">
+      <img src="images\img_index_10.jpg" alt="">
+      <div class="description">
+        <div class="description-child">
+          <h2>NISA：ニーサ<br><span class="fontSS">（少額投資非課税制度）</span></h2>
+          <p>公募株式投資信託の普通分配金と値上がり益が非課税となる税制優遇制度です。</p>
+          <div class="btn-wrap">
+            <a href="#">NISAへ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="article01">
+      <div class="description">
+        <div class="description-child">
+          <h2>ローン</h2>
+          <p>住宅ローンや教育ローン、カードローンなど、様々なライフシーンでご活用いただける、多種多様なローンをご用意しています。</p>
+          <div class="btn-wrap">
+            <a href="#">ローンへ</a>
+          </div>
+        </div>
+      </div>
+      <img src="images\img_index_06.jpg" alt="">
+    </div>
+    <div class="article01">
+      <img src="images\img_index_07.jpg" alt="">
+      <div class="description">
+        <div class="description-child">
+          <h2>保険</h2>
+          <p>ご自身はもちろん、ご家族のための備えも。お客さまのニーズに合わせてお選びいただける、様々な種類の保険商品をご用意しています。</p>
+          <div class="btn-wrap">
+            <a href="#">保険へ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="article01">
+      <div class="description">
+        <div class="description-child">
+          <h2>iDeCo：イデコ<br><span class="fontSS">（個人型確定拠出年金）</span></h2>
+          <p>iDeCoは任意でお申し込むことにより、公的年金に加えて給付を受けられる私的年金の一つです。</p>
+          <div class="btn-wrap">
+            <a href="#">iDeCoへ</a>
+          </div>
+        </div>
+      </div>
+      <img src="images\img_index_08.jpg" alt="">
+    </div>
+    <div class="article01">
+      <img src="images\img_index_09.jpg" alt="">
+      <div class="description">
+        <div class="description-child">
+          <h2>相続・信託商品</h2>
+          <p>お客さまの大切な資産を次世代にスムーズにつなげます。みずほ銀行では、みずほ信託銀行の信託代理店として商品の契約締結の媒介を行っています。</p>
+          <div class="btn-wrap">
+            <a href="#">相続・信託商品へ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="lyt-retail-box-btn">
+      <div class="btnRound">
+        <a href="#">商品・サービス一覧はこちら</a>
+      </div>
+    </div>
+    <div class="section-box">
+      <ul class="listNav">
+        <li>
+          <a href="#">商品概要説明一覧</a>
+        </li>
+        <li>
+          <a href="#">規定一覧</a>
+        </li>
+      </ul>
+    </div>
+    <div class="tabs">
+      <input id="all" type="radio" name="tab_item" checked>
+      <label class="tab_item" for="all">キャンペーン・プラン情報</label>
+      <input id="goods-service" type="radio" name="tab_item">
+      <label class="tab_item" for="goods-service">商品・サービスのご案内</label>
+      <input id="notice" type="radio" name="tab_item">
+      <label class="tab_item" for="notice">お知らせ</label>
+      <div class="tab_content" id="all_content">
+        <div class="tab_content_description">
+          <dl class="c-txtsp">
+            <dt>
+              <p>2019年11月29日</p>
+            </dt>
+            <dd>
+              <p class="cpnTit">
+                <a href="#">［オンライン金融商品仲介］みずほ証券個人向け国債のキャンペーン実施中！</a>
+              </p>
+              <p class="cpnPeriod"></p>
+            </dd>
+            <dt>
+              <p>2019年11月29日</p>
+            </dt>
+            <dd>
+              <p class="cpnTit">
+                <a href="#">みずほ銀行Twitter公式アカウント #みずほ銀行のクリスマスキャンペーン</a>
+              </p>
+              <p class="cpnPeriod"></p>
+            </dd>
+            <dt>
+              <p>2019年11月18日</p>
+            </dt>
+            <dd>
+              <p class="cpnTit">
+                <a href="#">ペイジーによるお支払いで1万円が300名様に当たる！キャンペーン</a>
+              </p>
+              <p class="cpnPeriod"></p>
+            </dd>
+            <dt>
+              <p>2019年11月1日</p>
+            </dt>
+            <dd>
+              <p class="cpnTit">
+                <a href="#">［期間限定 金利引き上げ］<外貨定期預金おトクな金利プラン>実施中！</a>
+              </p>
+              <p class="cpnPeriod">期間：2019年11月1日 金曜日～2019年12月30日 月曜日</p>
+            </dd>
+            <dt>
+              <p>2019年11月1日</p>
+            </dt>
+            <dd>
+              <p class="cpnTit">
+                <a href="#">J–Debitをご利用で現金10万円または人気の賞品が当たるチャンス！ 「J–Debit使ってトクトクキャンペーン’19冬」実施中！ （日本電子決済推進機構主催）</a>
+              </p>
+              <p class="cpnPeriod">キャンペーン期間：2019年11月1日 金曜日～2019年12月31日 火曜日</p>
+            </dd>
+            <dt>
+              <p>2019年10月22日</p>
+            </dt>
+            <dd>
+              <p class="cpnTit">
+                <a href="#">宝くじラッキーライン「年末ジャンボ」キャンペーン！</a>
+              </p>
+              <p class="cpnPeriod">キャンペーン期間：2019年10月22日 火曜日～2019年12月21日 土曜日</p>
+            </dd>
+            <dt>
+              <p>2019年10月21日</p>
+            </dt>
+            <dd>
+              <p class="cpnTit">みずほWallet関連 おトクでうれしいキャンペーン続々実施中！</p>
+              <p class="cpnPeriod"></p>
+            </dd>
+            <dt>
+              <p>2019年10月1日</p>
+            </dt>
+            <dd>
+              <p class="cpnTit">
+                <a href="#">使うほどドンドンお得！最大10万円キャッシュバックキャンペーン実施中！</a>
+              </p>
+              <p class="cpnPeriod">キャンペーン期間：2019年10月1日 火曜日 ～ 2019年12月31日 火曜日</p>
+            </dd>
+            <dt>
+              <p>2019年8月29日</p>
+            </dt>
+            <dd>
+              <p class="cpnTit">
+                <a href="#">
+                  <みずほWallet>ご利用に感謝して。キャッシュバック実施中！
+                </a>
+              </p>
+              <p class="cpnPeriod"></p>
+            </dd>
+          </dl>
+        </div>
+      </div>
+      <div class="tab_content" id="goods-service_content">
+        <div class="tab_content_description">
+          <dl class="c-txtsp">
+            <dt>2019年11月5日</dt>
+            <dd>
+              投資信託新商品の取扱を開始しました。<br>「One国際分散投資戦略ファンド
+              <br>
+              <span>
+                <a href="#">（目標リスク4％）（愛称：THE GRiPS 4％）</a>
+              </span>
+              /
+              <br>
+              <span>
+                <a href="#">（目標リスク6％）（愛称：THE GRiPS 6％）</a>
+              </span>
+              /
+              <br>
+              <span>
+                <a href="#">（目標リスク8％）（愛称：THE GRiPS 8％）</a>
+              </span>
+              」
+            </dd>
+            <dt>2019年11月5日</dt>
+            <dd>
+              <a href="#">〔投資信託〕2019年度 定期システムメンテナンスに伴う、一部サービス停止のお知らせ</a>
+            </dd>
+            <dt>2019年10月28日</dt>
+            <dd>
+              <a href="#">みずほダイレクト［インターネットバンキング］投資信託メニューがリニューアルしました。</a>
+            </dd>
+            <dt>2019年10月8日</dt>
+            <dd>
+              <a href="#">2020年3月1日（2020年1月31日のお取引条件判定）より、みずほマイレージクラブのサービス内容を変更させていただきます。</a>
+            </dd>
+            <dt>2019年9月30日</dt>
+            <dd>
+              <a href="#">［みずほ銀行キャッシュレスサービス］みずほ銀行のキャッシュレスサービスを早分かり！</a>
+            </dd>
+            <dt>2019年8月29日</dt>
+            <dd>
+              <a href="#">［みずほWallet for iOS］口座直結でお支払いできるスマホデビットサービス開始！ 本サービスにともないみずほWallet for Android、for
+                iOSの規定の一部を変更いたしました。</a>
+            </dd>
+            <dt>2019年6月7日</dt>
+            <dd>
+              投資信託新商品の取扱を開始しました。<br>「グローバル・ハイクオリティ成長株式ファンド（愛称：未来の世界）
+              <br>
+              <span><a href="#">（限定為替ヘッジ）</a></span>
+              /
+              <span><a href="#">（為替ヘッジなし）</a></span>
+              <br>
+              グローバル・ハイクオリティ成長株式ファンド（年2回決算型）（愛称：未来の世界（年2回決算型））
+              <br>
+              <span><a href="#">（限定為替ヘッジ）</a></span>
+              /
+              <span><a href="#">（為替ヘッジなし）</a></span>
+            </dd>
+            <dt>2019年5月29日</dt>
+            <dd>
+              投資信託新商品の取扱を開始しました。
+              <br>
+              「<span><a href="#">One NYダウ・インデックス・ファンド</a></span>」
+            </dd>
+            <dt>2019年2月14日</dt>
+            <dd>
+              <a href="#">モーニングスターアワード"ファンド オブ ザ イヤー 2018"みずほ銀行取扱の3ファンドが受賞！</a>
+            </dd>
+            <dt>2018年4月2日</dt>
+            <dd>
+              <a href="#">2018年4月末判定より、J.Score（個人向けレンディングサービスを提供）のスコア取得等がみずほマイレージクラブ「うれしい特典」のお取引条件に加わりました！</a>
+            </dd>
+          </dl>
+        </div>
+      </div>
+      <div class="tab_content" id="notice_content">
+        <div class="tab_content_description">
+          <dl class="c-txtsp">
+            <dt>2019年11月20日</dt>
+            <dd>
+              <a href="#">2019年度 年末年始の営業のご案内</a>
+            </dd>
+            <dt>2019年11月19日</dt>
+            <dd>
+              <span>
+                <a href="#">管理会社による公告の掲載について（アルゼンチン共和国円建て債券）（お知らせ）（PDF/403KB）</a>
+              </span>
+            </dd>
+            <dt>2019年11月12日</dt>
+            <dd>
+              <a href="#">『店舗統合・移転のお知らせ』に追加しました。</a>
+              <br>
+              移転実施日：2020年6月22日 月曜日 品川区役所出張所
+            </dd>
+            <dt>2019年11月1日</dt>
+            <dd>
+              <a href="#">みずほ銀行は「ウォームビズ」を実施しています。</a>
+            </dd>
+            <dt>2019年10月31日</dt>
+            <dd>
+              <span>
+                <a href="#">アルゼンチン共和国を控訴人とする訴訟の控訴審判決について（お知らせ）（PDF/1,776KB）</a>
+              </span>
+            </dd>
+            <dt>2019年10月30日</dt>
+            <dd>
+              <a href="#">みずほダイレクト［テレホンバンキング］オペレーターサービス廃止について</a>
+            </dd>
+            <dt>2019年10月28日</dt>
+            <dd>
+              <a href="#">令和元年台風第19号災害に対する義援金口座のご案内</a>
+            </dd>
+            <dt>2019年10月8日</dt>
+            <dd>
+              <a href="#">ATM・みずほダイレクト［テレホンバンキング］の振込手数料の一部改定について</a>
+            </dd>
+            <dt>2019年10月8日</dt>
+            <dd>
+              <a href="#">外貨両替の店舗受付停止について</a>
+            </dd>
+            <dt>2019年10月8日</dt>
+            <dd>
+              <a href="#">郵送による各種ご案内の終了について（個人のお客さま）</a>
+            </dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+    <p class="alnCenter"></p>
+    <div class="content bg-gray">
 
     </div>
-  </footer>
+    <div class="download bg-gray">
+
+    </div>
+    <footer>
+      <div>
+
+      </div>
+    </footer>
+  </div>
+  <script>
+    var slides = document.getElementsByClassName("slide");
+    var index = 0;
+    const delay = 5000;
+    const imageWidth = 1220;
+    function setCurrent(_index) {
+      // index番号は0から始まるのでここで1引いています
+      index = _index - 1　
+      document.querySelector("div.carousel-indicator > ul > li.carousel-indicator-item.is-current").classList.remove("is-current")
+      document.querySelector(`div.carousel-indicator > ul > li.carousel-indicator-item:nth-child(${_index})`).classList.add("is-current")
+      // const slides = document.querySelector("body > div > div.box-carousel > div")
+      slides[0].style.marginLeft = "-" + (_index - 1) * imageWidth + "px";
+    }
+
+    function goRight() {
+    if(index == slides.length -1) index = 0;
+    else index++;
+
+    slides[0].style.marginLeft = "-" + index * imageWidth + "px";
+    document.querySelector("#line span").classList.remove("expand")
+    document.querySelector("#line span").offsetWidth;//アニメ-ショーンをリスタートさせるために必要
+    document.querySelector("#line span").classList.add("expand")
+    document.querySelector("div.carousel-indicator > ul > li.carousel-indicator-item.is-current").classList.remove("is-current")
+    document.querySelector(`div.carousel-indicator > ul > li.carousel-indicator-item:nth-child(${index+1})`).classList.add("is-current")
+    setTimeout(goRight,delay)
+  }
+    //for auto Navigation
+    setTimeout(goRight,delay)//1000 = 1s
+  </script>
 </body>
 
 </html>

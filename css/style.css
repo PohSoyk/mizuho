@@ -8,16 +8,12 @@
 #menu {
   height: 99px;
 }
-.box-carousel {
-  height: 503px;
-}
 #breadcrumb-top {
   height: 30px;
 }
 
 body {
   margin: 0;
-  width: 1280px;
   font-family: "Droid Sans","ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, Roboto, Verdana, sans-serif;
 }
 
@@ -246,11 +242,19 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /*box-carousel*/
-.box-carousel img{
-  display: block;
-  margin-left: 30px;
+.box-carousel {
+  overflow: hidden;
+  width: 1220px;
+  margin: 0 auto;
 }
 
+.slides{
+  display: flex;
+}
+
+.slide {
+  transition: 0.6s;
+}
 /*info*/
 .info ul {
   list-style: none;
@@ -483,6 +487,11 @@ h1,h2,h3,h4,h5,h6 {
   padding: 0;
 }
 
+.floating-menu-item {
+  position: absolute;
+  white-space: nowrap;
+}
+
 .floating-menu-wrapper li {
   list-style: none;
 }
@@ -532,13 +541,14 @@ h1,h2,h3,h4,h5,h6 {
 }
 .floating-menu-chat {
   max-width: 50px;
-  white-space: nowrap;
   transition: max-width .36s ease .12s;
+  right: 0;
 }
 
 .floating-menu-help {
+  top: 50%;
+  right: 0;
   max-width: 50px;
-  white-space: nowrap;
   transition: max-width .36s ease .12s;
 }
 
@@ -546,11 +556,26 @@ h1,h2,h3,h4,h5,h6 {
   max-width: 400px;
 }
 
+.floating-menu-help:hover{
+  max-width: 400px;
+}
+
 .floating-menu-chat a:hover {
-  color: #006; 
+  color: #006;
   background-color: #aeb8de;
 }
 
+.floating-menu-chat a:hover span {
+  background-image: url(/images/icon_arrow-right_02.png)
+}
+
+.floating-menu-chat a:hover:before {
+  background-image: url(/images/icon_balloon_02.png);
+}
+
+.floating-menu-help a:hover {
+  background-color: #329dd7;
+}
 /*tabs*/
 /*タブ切り替え全体のスタイル*/
 .tabs {
@@ -608,4 +633,101 @@ input[name="tab_item"] {
 
 .tabs label.tab_item:nth-of-type(1) {
   border-left: 0;
+}
+/*画面中央寄せ*/
+.wraper {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+/* carousel-indicator */
+.wraper .carousel-indicator-item {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: .2s;
+  vertical-align: top;
+  border-radius: 50%;
+  background: #c7c2b5;
+}
+
+.wraper .carousel-indicator ul{
+  font-size: 0;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+}
+
+.wraper .carousel-indicator {
+  margin: 30px 0 50px 0;
+}
+
+.wraper .is-current {
+  background: #006;
+}
+
+/* carousel-controller */
+.wraper .carousel-controller {
+  position: absolute;
+  top: 690px;
+  left: 30px;
+  width: 61px;
+}
+
+.wraper .carousel-controller .carousel-controller-button img  {
+  width: 61px;
+  height: 23.45px;
+}
+
+.carousel-controller-button .carousel-controller-stop{
+  display: none;
+}
+
+.carousel-controller-button .carousel-controller-play{
+  display: block;
+}
+
+.carousel-controller-button.is-play .carousel-controller-stop{
+  display: block;
+}
+
+.carousel-controller-button.is-play .carousel-controller-play{
+  display: none;
+}
+
+.carousel-controller-button{
+  display: block;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  transition: .2s opacity; 
+  border: none;
+  outline: none;
+  background: none;
+}
+
+#line {
+  width:1220px; /* 横幅100% */
+  height:5px;
+  margin:-7px auto 0;
+  background:#ddd;
+}
+
+/* ラインのアニメーション時の色と動き */
+.expand {
+  width:1220px;
+  height:5px;
+  margin:0;
+  background:#006;
+  position:absolute;
+  animation:fullexpand 5s linear;
+  animation-iteration-count:infinite;
+}
+
+/* キーフレームを使った横幅100%のローディングの始まりと終わりの変化 */
+@keyframes fullexpand {
+  0%  { width:0px;}
+  100%{ width:1220px;}
 }
