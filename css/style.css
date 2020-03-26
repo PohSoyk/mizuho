@@ -521,15 +521,15 @@ h1,h2,h3,h4,h5,h6 {
 
 .floating-menu span {
   padding-left: 18px;
-  background: url(/images/icon_arrow-right_03.png) no-repeat 0 50%;
+  background: url(https://github.com/hokuro-jump/mizuho/blob/master/images/icon_arrow-right_03.png?raw=true) no-repeat 0 50%;
 }
 
 .floating-menu-chat a:before {
-  background: url(/images/icon_balloon_01.png) no-repeat 50% 50%;
+  background: url(https://github.com/hokuro-jump/mizuho/blob/master/images/icon_balloon_01.png?raw=true) no-repeat 50% 50%;
 }
 
 .floating-menu-help a:before {
-  background: url(/images/icon_question_01.png) no-repeat 50% 50%;
+  background: url(https://github.com/hokuro-jump/mizuho/blob/master/images/icon_question_01.png?raw=true) no-repeat 50% 50%;
 }
 
 .floating-menu a:before {
@@ -566,11 +566,11 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .floating-menu-chat a:hover span {
-  background-image: url(/images/icon_arrow-right_02.png)
+  background-image: url(https://github.com/hokuro-jump/mizuho/blob/master/images/icon_arrow-right_02.png?raw=true)
 }
 
 .floating-menu-chat a:hover:before {
-  background-image: url(/images/icon_balloon_02.png);
+  background-image: url(https://github.com/hokuro-jump/mizuho/blob/master/images/icon_balloon_02.png?raw=true);
 }
 
 .floating-menu-help a:hover {
